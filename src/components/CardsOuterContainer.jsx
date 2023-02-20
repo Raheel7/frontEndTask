@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Card from "./Card";
 import AddCard from "./AddCard";
-import styles from "@/styles/cardsOuterContainer.module.scss";
+import styles from "../styles/cardsOuterContainer.module.scss";
 import ListActionsDropdownModal from "./modals/ListActionsDropdownModal";
 import AppContext from "@/data/AppContext";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "@/styles/Sidebar.module.scss";
+import styles from "../styles/sidebar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
