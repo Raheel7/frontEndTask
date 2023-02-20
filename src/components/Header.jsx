@@ -11,7 +11,7 @@ export default function Header() {
             <Image src="/header-images/h1avatar1.png" alt="avatar1" width={30} height={30} />
             <span className={styles.alert1}>15</span>
 
-            <span style={{ color: "#070F21", opacity: 0.25, margin: "0 5px" }}>|</span>
+            <span style={{ color: "#070F", opacity: 0.25, margin: "0 5px" }}>|</span>
 
             <Image src="/header-images/h1avatar2.png" alt="avatar2" width={30} height={30} />
             <span className={styles.alert2}>11</span>
