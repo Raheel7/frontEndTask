@@ -5,7 +5,7 @@ import Sidebar from "../components/sidebar";
 import AppContext from "../data/AppContext";
 import { store } from "@/data/store";
 import Image from "next/image";
-import styles from "@/styles/main.module.scss";
+import styles from "@/styles/Main.module.scss";
 import "@/styles/globals.scss";
 
 export default function App({ Component, pageProps }) {

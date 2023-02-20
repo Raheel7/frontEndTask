@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import styles from '@/styles/checkbox.module.scss';
+import { useState } from "react";
+import styles from "@/styles/Checkbox.module.scss";
 
 function Checkbox({ checked, label }) {
   const [isChecked, setIsChecked] = useState(checked ?? false);
@@ -10,7 +10,7 @@ function Checkbox({ checked, label }) {
 
   return (
     <div className={styles.checkbox_container}>
-      <input type='checkbox' checked={isChecked} onChange={handleChange} />
+      <input type="checkbox" checked={isChecked} onChange={handleChange} />
       <span>{label}</span>
     </div>
   );
