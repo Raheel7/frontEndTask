@@ -1,0 +1,146 @@
+@import "variables";
+
+.modal {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 99;
+    min-width: 260px;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid $borderGray;
+    box-shadow: 0 1px 1px rgb(207, 207, 207);
+
+    .header {
+        padding: 6px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $borderGray;
+
+        & .left {
+            display: flex;
+            align-items: center;
+
+            .buttons_container {
+                display: flex;
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    border: none;
+                    cursor: pointer;
+                    padding: 6px 12px;
+                    border-radius: 10px 0 0 10px;
+
+                    span {
+                        margin-left: 8px;
+                    }
+                }
+
+                .left_button {
+                    background: $secondaryBlue;
+                    color: white;
+                }
+
+                .right_button {
+                    background: $lightGrayBackground;
+                    color: $textGray;
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+
+            & .title {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        max-height: 520px;
+        overflow-y: auto;
+        padding: 15px;
+        background: white;
+
+        & .tags {
+            p {
+                font-size: 10px;
+                margin-top: 5px;
+                color: $primaryBlue;
+            }
+        }
+
+        ul {
+            li {
+                text-decoration: none;
+                list-style: none;
+                margin: 1px -15px;
+                padding: 10px 20px;
+
+                &:hover {
+                    background: $lightGray;
+                }
+
+                &.active {
+                    background: $activeItemBackground;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $lightGrayBackground;
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 15px;
+        background: white;
+        border-top: 1px solid $borderGray;
+
+        & .left {
+            display: flex;
+            align-items: center;
+        }
+
+        & .right {
+            display: flex;
+            align-items: center;
+
+            & .clear_button {
+                border: none;
+                color: $textGray;
+            }
+
+            & .apply_button {
+                background: $primaryBlue;
+                color: white;
+            }
+        }
+
+        button {
+            padding: 8px 10px;
+            font-size: 12px;
+            border-radius: 5px;
+            white-space: nowrap;
+            cursor: pointer;
+            background: white;
+            color: $primaryBlue;
+            border: 1px solid $borderGray;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    li {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,28 @@
+@import "variables";
+
+.container {
+  display: flex;
+
+  .right {
+    margin-left: 270px;
+    flex: 1;
+
+    @media (max-width: 1200px) {
+      margin-left: 100px;
+    }
+  }
+
+  .main_content {
+    min-height: calc(100vh - 76px);
+    padding: 15px 15px 100px 15px;
+    background: $mainBackground;
+  }
+
+  .body_fixed_icons_container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

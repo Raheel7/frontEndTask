@@ -1,0 +1,52 @@
+@import "variables";
+
+.cards_outer_container {
+    border-radius: 8px;
+    height: fit-content;
+    padding: 8px 5px;
+    background: $lightGrayBackground;
+
+    .cards_outer_container_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        .cards_outer_container_header_left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cards_outer_container_header_right {
+            img {
+                cursor: pointer;
+            }
+
+            .modal_holder {
+                position: relative;
+            }
+        }
+    }
+
+    .cards_outer_container_body {
+        max-height: 950px;
+        overflow-y: auto;
+    }
+
+    .cards_outer_container_footer {
+        .cards_outer_container_footer_button {
+            font-weight: bold;
+            letter-spacing: 1px;
+            width: 100%;
+            border-radius: 4px;
+            padding: 10px 20px;
+            text-align: left;
+            padding-left: 10px;
+            cursor: pointer;
+            background: transparent;
+            color: $primaryBlue;
+            border: 1px solid $borderGray;
+        }
+    }
+}

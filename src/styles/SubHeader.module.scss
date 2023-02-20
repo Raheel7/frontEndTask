@@ -1,0 +1,81 @@
+@import "variables";
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid $borderGray;
+
+  .column1,
+  .column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    height: 40;
+    gap: 10px;
+  }
+
+  .column1 {
+    .column1_avatars_container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .avatar {
+        position: relative;
+
+        .avatar_badge {
+          position: absolute;
+          bottom: -2px;
+          right: -2px;
+          border-radius: 100%;
+          padding: 0 5px;
+          font-size: 12px;
+          background: $primaryBlue;
+          color: white;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .svg_container,
+  .svg_container_circle,
+  .svg_container_circle_first {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 7px;
+    cursor: pointer;
+    background: $lightGrayBackground;
+    border: 1px solid $borderGray;
+
+    img {
+      opacity: 0.8;
+    }
+  }
+
+  .svg_container_circle,
+  .svg_container_circle_first {
+    border-radius: 100%;
+  }
+
+  .svg_container_circle_first {
+    background: $primaryBlue;
+  }
+
+  @media only screen and (max-width: 992px) {
+    justify-content: end;
+  }
+}
