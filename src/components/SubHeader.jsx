@@ -1,7 +1,7 @@
 import { useContext, useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import AppContext from "@/pages/AppContext";
+import AppContext from "@/data/AppContext";
 import styles from "@/styles/subHeader.module.scss";
 import FilterDropdownModal from "./modals/FilterDropdownModal";
 import SortByDropdownModal from "./modals/SortByDropdownModal";
