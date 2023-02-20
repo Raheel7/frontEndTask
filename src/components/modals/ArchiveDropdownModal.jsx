@@ -1,4 +1,4 @@
-import { pinnedCards } from "@/data/pinnedCards";
+import { pinnedCards } from "../../data/pinnedCards";
 import Card from "../Card";
 import SearchInput from "../SearchInput";
 import Image from "next/image";

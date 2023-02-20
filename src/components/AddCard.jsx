@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import Image from "next/image";
-import AppContext from "@/data/AppContext";
+import AppContext from "../data/AppContext";
 import styles from "../styles/addCard.module.scss";
-import { projects } from "@/data/projects";
+import { projects } from "../data/projects";
 
 export default function AddCard({ setIsCardAdding, category }) {
   const cards = useContext(AppContext);

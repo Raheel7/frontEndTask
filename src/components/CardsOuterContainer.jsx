@@ -4,7 +4,7 @@ import Card from "./Card";
 import AddCard from "./AddCard";
 import styles from "../styles/cardsOuterContainer.module.scss";
 import ListActionsDropdownModal from "./modals/ListActionsDropdownModal";
-import AppContext from "@/data/AppContext";
+import AppContext from "../data/AppContext";
 
 export default function CardsOuterContainer({ data, length, category, categoryShort }) {
   const cards_outer_container_body_ref = useRef(null);

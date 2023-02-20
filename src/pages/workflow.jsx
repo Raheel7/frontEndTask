@@ -1,4 +1,4 @@
-import CardsOuterContainer from "@/components/CardsOuterContainer";
+import CardsOuterContainer from "../components/CardsOuterContainer";
 import AppContext from "../data/AppContext";
 import { useContext } from "react";
 import styles from "./../styles/workflow.module.scss";
